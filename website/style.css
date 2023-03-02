@@ -291,17 +291,14 @@ body {
     gap: 2em;
 }
 
-.title-coord {
+.title-coord,
+.title-travelers {
     margin-left: auto;
     margin-right: auto;
     font-size: 24px;
     font-family: inter;
     font-weight: 400;
     padding-top: 2em;
-}
-
-.civil {
-    padding-bottom: 2em;
 }
 
 .civil>p {
@@ -315,7 +312,9 @@ body {
 }
 
 .man,
-.woman {
+.woman,
+.yes,
+.no {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -325,24 +324,102 @@ body {
 }
 
 .names,
-.email-phone {
+.email-phone,
+.status {
     display: flex;
     flex-direction: row;
     gap: 3em;
-    padding-bottom: 2em;
 }
 
+.newsletter>p {
+    padding-bottom: 1em;
+}
 
 /* TRAVELERS */
 
 .travelers {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
     width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-bottom: 2em;
+}
+
+.send-button {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.add-traveler,
+.send {
+    text-align: center;
+    background-color: #CDA47A;
+    border-radius: 2em;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.add-traveler {
+    padding: 1em;
+    width: 250px;
+    margin: 2em auto 1em;
+}
+
+.send {
+    padding: 0.6em;
+    width: 150px;
 }
 
 /* FOOTER */
 
 .footer {
-    width: 100%;
+    padding: 10%;
+    width: 80%;
     height: 80vh;
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(180deg, rgba(255, 202, 148, 0) 0%, #FFCA94 100%);
+}
+
+.footer-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+}
+
+.footer-title>p {
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.footer-title>h4 {
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #CDA47A;
+}
+
+.contact-button {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 1em;
+    border-radius: 2em;
+    color: white;
+    background: linear-gradient(180deg, #FFCA94 0%, rgba(255, 202, 148, 0) 100%);
 }
