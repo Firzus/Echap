@@ -32,6 +32,14 @@ body {
 
 /* COMPONENTS */
 
+.fontJura {
+    font-family: jura;
+}
+
+.fontInter {
+    font-family: inter;
+}
+
 .colorPrimary {
     color: white;
 }
@@ -73,6 +81,17 @@ body {
     border-top: 15px solid rgb(0, 0, 0);
     border-right: 9px solid transparent;
     border-left: 9px solid transparent;
+    cursor: pointer;
+}
+
+.check {
+    width: 40px;
+    height: 40px;
+    border-radius: 2em;
+    background-color: #CDA47A;
+    border: none;
+    cursor: pointer;
+    margin-right: 1em;
 }
 
 /* HOME */
@@ -200,11 +219,20 @@ body {
     text-align: center;
 }
 
+/* MAIN CONTENT */
+
+.main-content {
+    width: calc(100% - 40%);
+    padding: 2em 20% 2em 20%;
+}
+
 /* PROJECT */
+
 .project {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 2em;
 }
 
 .title-project {
@@ -213,14 +241,6 @@ body {
     font-weight: 400;
     font-size: 24px;
     font-family: inter;
-}
-
-.form-project {
-    width: calc(100% - 40%);
-    padding: 2em 20% 2em 20%;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
 }
 
 .destination {
@@ -244,16 +264,79 @@ body {
     flex-direction: row;
 }
 
-/* COORDINATE */
-.coordinate {
-    width: 100%;
-    height: 50vh;
+.adultes>.button-box>button,
+.enfants>.button-box>button {
+    width: 70px;
 }
 
+.enfants {
+    padding-left: 4em;
+}
+
+.description-input {
+    font-size: 15px;
+    margin-top: 2em;
+    display: block;
+    background-color: #CDA47A;
+    color: white;
+    border: none;
+}
+
+/* COORDINATE */
+
+.coordinate {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.title-coord {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    font-family: inter;
+    font-weight: 400;
+    padding-top: 2em;
+}
+
+.civil {
+    padding-bottom: 2em;
+}
+
+.civil>p {
+    font-family: jura;
+    padding-bottom: 1em;
+}
+
+.buttons-check {
+    display: flex;
+    flex-direction: row;
+}
+
+.man,
+.woman {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 2em;
+    font-family: inter;
+    font-size: 15px;
+}
+
+.names,
+.email-phone {
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+    padding-bottom: 2em;
+}
+
+
 /* TRAVELERS */
+
 .travelers {
     width: 100%;
-    height: 50vh;
 }
 
 /* FOOTER */
