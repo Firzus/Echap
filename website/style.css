@@ -382,9 +382,8 @@ body {
 /* FOOTER */
 
 .footer {
-    padding: 10%;
+    padding: 10% 10% 4em 10%;
     width: 80%;
-    height: 80vh;
     display: flex;
     flex-direction: column;
     background: linear-gradient(180deg, rgba(255, 202, 148, 0) 0%, #FFCA94 100%);
@@ -394,6 +393,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 10em;
 }
 
 .footer-title {
@@ -417,9 +417,72 @@ body {
 
 .contact-button {
     margin-top: auto;
-    margin-bottom: auto;
     padding: 1em;
     border-radius: 2em;
     color: white;
     background: linear-gradient(180deg, #FFCA94 0%, rgba(255, 202, 148, 0) 100%);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 4em;
+}
+
+.help,
+.our-travel,
+.about,
+.slogan {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 25%;
+}
+
+.title-help,
+.title-travel,
+.title-about,
+.title-slogan {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.content-help,
+.content-travel,
+.content-slogan,
+.content-about {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.footer-deco {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 6em;
+}
+
+.deco-title {
+    font-weight: 700;
+    font-size: 96px;
+}
+
+.content-deco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: auto;
+}
+
+.conditions {
+    font-weight: 700;
+    font-size: 10px;
 }
