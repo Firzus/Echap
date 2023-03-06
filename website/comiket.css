@@ -1,0 +1,39 @@
+/* FONTS */
+
+@font-face {
+    font-family: jura;
+    src: url(./data/font/Jura-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: inter;
+    src: url(./data/font/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+/* STARTER */
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: white;
+    scroll-behavior: smooth;
+}
+
+.content {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
